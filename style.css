@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap');
+
+body {
+    background-color: #121210; /* Un negro un poco más cálido */
+    background-image: radial-gradient(circle at center, #1e1e1a 0%, #0a0a08 100%);
+    color: #e0d5c1;
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedor {
+    background-color: rgba(20, 20, 18, 0.9);
+    padding: 40px;
+    border-radius: 4px; /* Bordes menos redondeados */
+    border: 1px solid #8b7d5e; /* Dorado apagado, estilo antiguo */
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    max-width: 450px;
+}
+
+h1, #nombre-carta {
+    font-family: 'Cormorant Garamond', serif;
+    color: #c4b595;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2.2rem; /* Agrandamos el título porque esta fuente es más pequeña */
+}
+
+/* Agregamos este bloque para que la interpretación también se lea bien y combine */
+#interpretacion-carta {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; 
+    font-style: italic;
+    color: #e0d8c3;
+    line-height: 1.5;
+}
+
+#imagen-carta {
+    width: 250px; 
+    max-width: 100%; /* Esta es la regla mágica para que nunca se salga de la caja */
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid #1a1a1a;
+    outline: 1px solid #8b7d5e;
+    outline-offset: -5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: transform 0.4s ease;
+}
+
+button {
+    background: #1a1a1a;
+    color: #c4b595;
+    border: 1px solid #8b7d5e;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-family: 'Courier Prime', monospace;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #2a2a26;
+    color: #e0d5c1;
+}
+
+button:disabled {
+    border-color: #444;
+    color: #555;
+    cursor: not-allowed;
+    background: transparent;
+}
