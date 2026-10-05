@@ -44,3 +44,26 @@ To ensure the stability of the core functionality, the critical path of the appl
 
 **Automated Scenarios:**
 * **[AUTO-TC02] End-to-End Card Draw Flow:** Validates the UI state transitions. It verifies the initial state, asserts that the button disables during the simulated API latency (explicit wait), and confirms the final rendering of the card's image, title, and interpretation text.
+
+## 🚀 Testing Strategy (BDD)
+
+The automation framework is designed using a Behavior-Driven Development (BDD) approach. Test scenarios are written in Gherkin syntax (`.feature` files) to ensure the documentation is highly readable and easily understandable for both technical and business stakeholders.
+
+### Automated Scenario: End-to-End Card Draw Flow
+
+* Validates the initial state of the User Interface.
+* Handles application latency (simulated API calls) using Selenium **Explicit Waits**.
+* Verifies UI element state transitions (disabled/enabled buttons, dynamic texts).
+* Confirms the successful rendering of card images and interpretation texts.
+
+## ⚙️ How to run tests locally
+
+1. Clone this repository to your local machine.
+2. Open the project in a Java-compatible IDE (e.g., IntelliJ IDEA, Eclipse, or VS Code).
+3. Sync the `pom.xml` file to download all Maven dependencies.
+4. Run the `TestRunner.java` class located in the `src/test/java/runners/` directory.
+
+## 📊 Test Report
+
+The framework is configured to generate visual evidence of the test executions. Upon completion, Cucumber automatically generates a native, detailed HTML report, which can be found in the `target/cucumber-reports/TarotReport.html` directory.
+

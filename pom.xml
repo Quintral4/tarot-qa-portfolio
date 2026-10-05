@@ -29,21 +29,21 @@
             <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Cucumber para Java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.18.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Integración de Cucumber con TestNG -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.18.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
-    <!-- Cucumber para Java -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>7.18.1</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- Integración de Cucumber con TestNG -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-testng</artifactId>
-        <version>7.18.1</version>
-        <scope>test</scope>
-    </dependency>
 </project>
