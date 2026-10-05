@@ -1,5 +1,7 @@
 # 🔮 Daily Tarot - QA Automation Portfolio
 
+Play HERE-- https://quintral4.github.io/tarot-qa-portfolio/
+
 ## About the Project
 This project is a fully functional web application designed specifically to serve as a **Quality Assurance automation playground**. It features a "Daily Tarot" card draw simulator with an ethereal aesthetic, built purely with HTML, CSS, and vanilla JavaScript. 
 
